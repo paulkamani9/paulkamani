@@ -15,7 +15,7 @@ Paul is a Computer Science student focused on full-stack development, user exper
 
 ## Deployment checklist
 
-1. Update canonical URL and social preview images in `index.html` (if different from `https://paulkamani.dev`).
+1. Update canonical URL and social preview images in `index.html` (`https://paulkamani9.github.io/paulkamani/`).
 2. Add a production-ready OG/Twitter preview image at `/public/og-image.jpg` and update the meta tags.
 3. Verify `info.md` is not committed (it is added to `.gitignore`).
 
