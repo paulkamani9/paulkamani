@@ -16,11 +16,11 @@ const navigation = [
 ];
 
 const socialLinks = [
-  { name: "GitHub", href: "https://github.com/paulkamani99", icon: Github },
+  { name: "GitHub", href: "https://github.com/paulkamani9", icon: Github },
   { name: "Email", href: "mailto:paulkamani9@gmail.com", icon: Mail },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/paulkamani",
+    href: "https://www.linkedin.com/in/kamani-paul-only1",
     icon: Linkedin,
   },
 ];

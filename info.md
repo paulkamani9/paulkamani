@@ -1,16 +1,19 @@
 # Paul Arhyel Kamani
 
 ## Summary
+
 Enthusiastic Computer Science student with a strong interest in full-stack web development and test automation. Experienced with Next.js, React, Selenium, Java, Drizzle ORM, and Better Auth. Passionate about real-world projects, clean architecture, and teamwork.
 
 ---
 
 ## Education
+
 - **BSc (Hons) Computer Science**, Middlesex University Mauritius (2023 – 2026, Year 2)
 
 ---
 
 ## Skills
+
 - Languages: JavaScript, TypeScript, Python, C#, Java, C
 - Web Development: React, Next.js, Tailwind CSS, Node.js, Prisma ORM
 - Testing: Selenium Java, Cucumber, Gherkin
@@ -22,19 +25,21 @@ Enthusiastic Computer Science student with a strong interest in full-stack web d
 ---
 
 ## Achievements
-- 🥈 **First Runner-Up** – IEEE MDXTHON Hackathon 2025 (certificate in `/public/certificate.png`) - Link to project https://github.com/ieeemumsb/Console.log-Champions- 
-- Consistent academic performance and self-driven projects
 
+- 🥈 **First Runner-Up** – IEEE MDXTHON Hackathon 2025 (certificate in `/public/certificate.png`) - Link to project https://github.com/ieeemumsb/Console.log-Champions-
+- Consistent academic performance and self-driven projects
 
 ---
 
 ## Languages
+
 - English: Fluent
 - French: Basic (learning)
 
 ---
 
 ## Hobbies
+
 - Content creation (YouTube videos about emotions and growth)
 - Video editing
 - Reading history
@@ -43,7 +48,8 @@ Enthusiastic Computer Science student with a strong interest in full-stack web d
 ---
 
 ## Contact
+
 - Email: paulkamani9@gmail.com
-- GitHub: [github.com/paulkamani99](https://github.com/paulkamani99)
+- GitHub: [github.com/paulkamani9](https://github.com/paulkamani9)
 - Location: Flic en Flac, Mauritius
 - Mobile: +230 57475246

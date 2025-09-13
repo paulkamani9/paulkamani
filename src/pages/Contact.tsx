@@ -45,8 +45,8 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    username: "paulkamani99",
-    link: "https://github.com/paulkamani99",
+    username: "paulkamani9",
+    link: "https://github.com/paulkamani9",
     color: "from-gray-400 to-gray-600",
   },
   {

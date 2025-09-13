@@ -4,7 +4,7 @@ import { fadeUpVariants } from "../lib/animations";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 
 const socialLinks = [
-  { name: "GitHub", href: "https://github.com/paulkamani99", icon: Github },
+  { name: "GitHub", href: "https://github.com/paulkamani9", icon: Github },
   { name: "Email", href: "mailto:paulkamani9@gmail.com", icon: Mail },
 ];
 

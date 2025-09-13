@@ -248,7 +248,7 @@ export const Projects = () => {
                 variant="primary"
                 size="lg"
                 onClick={() =>
-                  window.open("https://github.com/paulkamani99", "_blank")
+                  window.open("https://github.com/paulkamani9", "_blank")
                 }
                 className="flex items-center space-x-2"
               >
