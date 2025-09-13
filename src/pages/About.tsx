@@ -113,7 +113,7 @@ export const About = () => {
               >
                 <div className="relative w-80 h-80 mx-auto lg:mx-0 rounded-2xl overflow-hidden glass">
                   <img
-                    src="/paul.jpg"
+                    src={`${import.meta.env.BASE_URL}paul.jpg`}
                     alt="Paul Kamani"
                     className="w-full h-full object-cover"
                   />

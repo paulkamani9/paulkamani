@@ -26,7 +26,7 @@ const achievements = [
     technologies: ["React", "Node.js", "PostgreSQL", "Express"],
     date: "2025",
     type: "hackathon",
-    certificate: "/certificate.png",
+  certificate: "/certificate.png",
     projectLink: "https://github.com/ieeemumsb/Console.log-Champions-",
     icon: Trophy,
     color: "from-yellow-400 to-orange-500",
@@ -175,11 +175,11 @@ const AchievementModal = ({
               <div className="mb-6">
                 <h4 className="text-white font-medium mb-3">Certificate</h4>
                 <div className="relative rounded-lg overflow-hidden glass p-4">
-                  <img
-                    src={achievement.certificate}
-                    alt="Achievement Certificate"
-                    className="w-full h-auto rounded-lg"
-                  />
+                      <img
+                        src={`${import.meta.env.BASE_URL}${achievement.certificate.replace(/^\//, "")}`}
+                        alt="Achievement Certificate"
+                        className="w-full h-auto rounded-lg"
+                      />
                 </div>
               </div>
             )}
