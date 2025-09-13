@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import {
   Mail,
   Phone,
@@ -87,17 +88,52 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // Read EmailJS config from Vite env variables
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    if (!serviceId || !templateId || !publicKey) {
+      // Fallback: mark as not submitting and show an error via console
+      console.error(
+        "Missing EmailJS configuration. Make sure VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID and VITE_EMAILJS_PUBLIC_KEY are set."
+      );
+      setIsSubmitting(false);
+      return;
+    }
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 3000);
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      // Sent successfully
+      setIsSubmitted(true);
+      // Reset form after 3 seconds when successfully submitted
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", message: "" });
+      }, 3000);
+    } catch (err) {
+      console.error("EmailJS send error:", err);
+      // Optionally, you could show an inline error state; for now we log and keep form available
+      // Consider showing a toast in the UI
+    } finally {
+      setIsSubmitting(false);
+
+      // Reset form after 3 seconds when successfully submitted
+      if (isSubmitted) {
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: "", email: "", message: "" });
+        }, 3000);
+      } else if (isSubmitted === false) {
+        // If submission failed, keep the data intact so the user can retry
+      }
+    }
   };
 
   return (

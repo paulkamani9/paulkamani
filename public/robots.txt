@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://paulkamani.dev/sitemap.xml
-Host: https://paulkamani.dev
+Sitemap: https://paulkamani9.github.io/paulkamani/sitemap.xml
+Host: https://paulkamani9.github.io/paulkamani

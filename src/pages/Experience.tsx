@@ -20,7 +20,7 @@ import {
 interface TimelineItemProps {
   experience: Experience;
   index: number;
-  isLast?: boolean;
+  // isLast?: boolean; // Removed unused prop
 }
 
 const getIcon = (type: Experience["type"]) => {
@@ -52,8 +52,8 @@ const getTypeColor = (type: Experience["type"]) => {
 const TimelineItem = ({
   experience,
   index,
-  isLast = false,
-}: TimelineItemProps) => {
+}: // isLast = false, // Removed unused prop
+TimelineItemProps) => {
   const { ref, inView } = useIntersectionObserver({ threshold: 0.3 });
   const IconComponent = getIcon(experience.type);
   const isEven = index % 2 === 0;
@@ -187,12 +187,7 @@ const ExperienceSection = ({
 
     <div className="relative space-y-16">
       {experiences.map((exp, index) => (
-        <TimelineItem
-          key={exp.id}
-          experience={exp}
-          index={index}
-          isLast={index === experiences.length - 1}
-        />
+        <TimelineItem key={exp.id} experience={exp} index={index} />
       ))}
     </div>
   </Reveal>
