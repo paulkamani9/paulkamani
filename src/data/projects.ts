@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "Console.log Champions",
     description:
       "🥈 First Runner-Up at IEEE MDXTHON Hackathon 2025 - Innovative solution for modern development challenges.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Express", "WebSockets"],
+    technologies: ["React", "Next.js", "WebSockets", "TypeScript", "Zego Cloud"],
     github: "https://github.com/ieeemumsb/Console.log-Champions-",
     featured: true,
   },

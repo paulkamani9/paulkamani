@@ -25,3 +25,6 @@ dist-ssr
 
 # Git
 .github
+
+# Local personal info (do not commit)
+info.md
